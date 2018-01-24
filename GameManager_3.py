@@ -1,6 +1,6 @@
 from Grid_3       import Grid
 from ComputerAI_3 import ComputerAI
-from PlayerAI_3   import PlayerAI
+from PlayerAICut_3   import PlayerAI
 from Displayer_3  import Displayer
 from random       import randint
 import time
@@ -22,7 +22,7 @@ actionDic = {
 # timeLimit = 0.2
 # allowance = 0.05
 timeLimit = 1
-allowance = 1
+allowance = 0.2
 class GameManager:
     def __init__(self, size = 4):
         self.grid = Grid(size)
